@@ -36,7 +36,7 @@ body:
         - Linux
     validations:
       required: false
-  - type: input
+  - type: textarea
     id: suggestion
     attributes:
       label: What are the details of your suggestion?
