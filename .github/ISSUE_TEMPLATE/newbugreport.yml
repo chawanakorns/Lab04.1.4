@@ -1,0 +1,44 @@
+name: Bug Report #2
+description: File a bug report
+title: "Feature: "
+labels: [""]
+projects: [""]
+assignees:
+  - octocat
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: What is your name?
+      placeholder: ex. Sertha Taweewattana
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking time to fill out this bug report!
+  - type: dropdown
+    id: request
+    attributes:
+      label: Type of request?
+      description: Select the type of your request
+      options:
+        - New Feature (Default)
+      default: 0
+    validations:
+      required: false
+  - type: dropdown
+    id: OS
+    attributes:
+      label: What is the OS which you want to suggest?
+      options:
+        - Windows
+        - MacOS
+        - Linux
+    validations:
+      required: false
+  - type: input
+    id: suggestion
+    attributes:
+      label: What are the details of your suggestion?
+      description: Explain what do you want
+      placeholder: Feature details!
